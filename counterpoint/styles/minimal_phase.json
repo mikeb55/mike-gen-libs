@@ -1,0 +1,12 @@
+{
+  "id": "minimal_phase",
+  "name": "Minimalism (Phase)",
+  "epoch": "Contemporary",
+  "voices_min": 2,
+  "voices_max": 4,
+  "consonances_ic": [0, 4, 7, 9],
+  "rules": [
+    { "category": "texture", "severity": "soft", "description": "allow repeated patterns with gradual phase offsets" }
+  ],
+  "heuristics": { "prefer_contrary": 0.2, "repeat_bias": 0.7, "sync_bias": 0.7 }
+}

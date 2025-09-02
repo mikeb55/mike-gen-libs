@@ -1,0 +1,23 @@
+{
+  "id": "jazz_guidetone",
+  "name": "Jazz (Guide-tones)",
+  "epoch": "20th-21st c.",
+  "voices_min": 2,
+  "voices_max": 4,
+  "consonances_ic": [0, 3, 4, 7, 8, 9, 10],
+  "rules": [
+    { "category": "motion", "severity": "soft", "description": "prefer contrary or oblique motion where possible" },
+    { "category": "consonance", "severity": "soft", "description": "tolerate passing dissonance if approached/resolved by step" }
+  ],
+  "heuristics": {
+    "prefer_contrary": 0.4,
+    "cadential_strength": 0.3,
+    "repeat_bias": 0.15,
+    "sync_bias": 0.5,
+    "syncopation_bias": 0.35,
+    "approach_tones_bias": 0.5
+  },
+  "exercises": [
+    { "title": "Guide-tone lines", "steps": ["Emphasize 3rds/7ths", "Approach by step where possible"] }
+  ]
+}

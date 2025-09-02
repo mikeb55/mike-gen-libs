@@ -1,0 +1,8 @@
+{
+  "styles": [
+    { "id": "ren_species",     "name": "Renaissance (Species)" },
+    { "id": "baroque_invert",  "name": "Baroque (Invertible)" },
+    { "id": "minimal_phase",   "name": "Minimalism (Phase)" },
+    { "id": "jazz_guidetone",  "name": "Jazz (Guide-tones)" }
+  ]
+}
