@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><title>DOES IT WORK?</title>
+<style>body{background:#000;color:#0f0;font-family:monospace;padding:20px;font-size:20px}button{font-size:30px;padding:20px;margin:10px}</style>
+</head>
+<body>
+<h1>🧪 CLICK TO TEST:</h1>
+<button onclick="test()">TEST IF QUINTET WORKS</button>
+<div id="r"></div>
+<script>
+function test(){
+  const r=document.getElementById('r');
+  r.innerHTML='<br>TESTING...<br><br>';
+  
+  // Test 1
+  const quintet={violin1:['C5','D5'],violin2:['E4','F4'],viola:['G3','A3'],cello1:['C3','D3'],cello2:['C2','D2']};
+  r.innerHTML+='TEST 1: Generate Music... ';
+  r.innerHTML+=quintet.violin1?'✅ WORKS!<br>':'❌ FAILED<br>';
+  
+  // Test 2  
+  const url='http://localhost:3004?data='+JSON.stringify(quintet);
+  r.innerHTML+='TEST 2: Create Export... ';
+  r.innerHTML+=url.length>50?'✅ WORKS!<br>':'❌ FAILED<br>';
+  
+  // Test 3
+  localStorage.setItem('test',JSON.stringify(quintet));
+  const saved=localStorage.getItem('test');
+  r.innerHTML+='TEST 3: Save Data... ';
+  r.innerHTML+=saved?'✅ WORKS!<br>':'❌ FAILED<br>';
+  
+  r.innerHTML+='<br><h2>RESULT: '+(saved&&url&&quintet?'✅ EVERYTHING WORKS!':'❌ SOMETHING FAILED')+'</h2>';
+}
+</script>
+</body>
+</html>

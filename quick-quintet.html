@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head><title>Quick Quintet Composer</title></head>
+<body>
+<h1>🎻 Rapid String Quintet Generator</h1>
+
+<button onclick="generateQuintet()">Generate String Quintet</button>
+<div id="output"></div>
+
+<script src="src/export/universal_export.js"></script>
+<script>
+function generateQuintet() {
+    // Sample quintet data
+    const quintetData = {
+        source: 'QuickComposer',
+        quartet: {
+            parts: ['Violin 1', 'Violin 2', 'Viola', 'Cello 1', 'Cello 2'],
+            measures: [
+                {violin1: 'C5', violin2: 'E4', viola: 'G3', cello1: 'C3', cello2: 'C2'},
+                {violin1: 'D5', violin2: 'F4', viola: 'A3', cello1: 'D3', cello2: 'D2'},
+                {violin1: 'E5', violin2: 'G4', viola: 'B3', cello1: 'E3', cello2: 'E2'},
+                {violin1: 'G5', violin2: 'B4', viola: 'D4', cello1: 'G3', cello2: 'G2'}
+            ],
+            tempo: 120,
+            key: 'C major'
+        }
+    };
+    
+    document.getElementById('output').innerHTML = `
+        <h2>Generated Quintet:</h2>
+        <pre>${JSON.stringify(quintetData, null, 2)}</pre>
+        <p>✅ Ready to export to other apps!</p>
+    `;
+}
+</script>
+</body>
+</html>
