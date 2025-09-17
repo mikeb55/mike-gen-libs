@@ -1,0 +1,24 @@
+{
+  "id": "ren_species",
+  "name": "Renaissance (Species)",
+  "epoch": "Renaissance",
+  "voices_min": 2,
+  "voices_max": 4,
+  "consonances_ic": [0, 3, 4, 7, 8, 9],
+  "rules": [
+    { "category": "motion", "severity": "hard", "description": "avoid parallel perfects (P5/P8)" },
+    { "category": "consonance", "severity": "hard", "description": "strong-beat consonance vs. bass" },
+    { "category": "suspension", "severity": "soft", "description": "encourage suspensions resolving by step" }
+  ],
+  "heuristics": {
+    "prefer_contrary": 0.6,
+    "cadential_strength": 0.5,
+    "repeat_bias": 0.2,
+    "sync_bias": 0.4,
+    "syncopation_bias": 0.1,
+    "approach_tones_bias": 0.2
+  },
+  "exercises": [
+    { "title": "2nd species above cantus", "steps": ["Half notes above bass", "Consonance on strong beats"] }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "baroque_invert",
+  "name": "Baroque (Invertible)",
+  "epoch": "Baroque",
+  "voices_min": 2,
+  "voices_max": 4,
+  "consonances_ic": [0, 3, 4, 7, 8, 9],
+  "rules": [
+    { "category": "motion", "severity": "hard", "description": "avoid parallel perfects" }
+  ],
+  "heuristics": { "prefer_contrary": 0.45 }
+}
